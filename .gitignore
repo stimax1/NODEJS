@@ -1,0 +1,127 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Bases de datos locales
+*.db
+*.sqlite
+*.sqlite3
+database/*.db
+!database/.gitkeep
+
+# Archivos temporales del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDEs y editores
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Cobertura de tests
+coverage/
+*.lcov
+.nyc_output/
+
+# Distribución y builds
+dist/
+build/
+out/
+
+# Archivos de configuración local
+.npmrc
+.yarnrc
+
+# Archivos de respaldo
+*.bak
+*.backup
+*.old
+*.orig
+
+# Archivos de sistema
+.Trash-*
+$RECYCLE.BIN/
+
+# Archivos específicos de macOS
+.AppleDouble
+.LSOverride
+Icon
+
+# Archivos específicos de Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Archivos específicos de Linux
+.directory
+.Trash-*
+
+# Archivos temporales de Node.js
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+
+# Archivos de TypeScript (si se usa en el futuro)
+*.tsbuildinfo
+
+# Caché de herramientas
+.eslintcache
+.node_repl_history
+.yarn-integrity
+
+# Documentos de respaldo
+*~
+\#*\#
+.\#*
+
+# Archivos subidos por usuarios (si implementas carga de archivos)
+uploads/
+temp/
+
+# Certificados y claves (¡NUNCA subir a Git!)
+*.pem
+*.key
+*.cert
+*.crt
+ssl/
+
+# Archivos de configuración sensibles
+config/local.json
+config/production.json
+secrets.json

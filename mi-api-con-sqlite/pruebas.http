@@ -1,0 +1,21 @@
+### Página de inicio
+GET http://localhost:3000/
+### Ver todas las tareas
+GET http://localhost:3000/api/tareas
+### Ver tarea específica
+GET http://localhost:3000/api/tareas/1
+### Crear nueva tarea
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+{
+"titulo": "Aprender REST Client",
+"descripcion": "Probar APIs desde archivos .http"
+}
+### Actualizar tarea
+PUT http://localhost:3000/api/tareas/1
+Content-Type: application/json
+{
+"completada": true
+}
+### Eliminar tarea
+DELETE http://localhost:3000/api/tareas/1
