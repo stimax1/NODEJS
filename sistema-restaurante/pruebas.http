@@ -1,0 +1,77 @@
+# Root
+GET http://localhost:3000/
+
+### Categorias
+GET http://localhost:3000/api/categorias
+GET http://localhost:3000/api/categorias/1
+
+POST http://localhost:3000/api/categorias
+Content-Type: application/json
+
+{
+  "nombre": "Ensaladas",
+  "descripcion": "Ensaladas y platos frescos"
+}
+
+PUT http://localhost:3000/api/categorias/1
+Content-Type: application/json
+
+{
+  "nombre": "Entradas - Actualizado",
+  "descripcion": "Aperitivos y entradas"
+}
+
+DELETE http://localhost:3000/api/categorias/5
+
+### Platos
+GET http://localhost:3000/api/platos
+GET http://localhost:3000/api/platos/1
+GET http://localhost:3000/api/platos/categoria/2
+
+POST http://localhost:3000/api/platos
+Content-Type: application/json
+
+{
+  "nombre": "Ensalada César",
+  "descripcion": "Lechuga, pollo, queso y aderezo",
+  "precio": 12.5,
+  "disponible": true,
+  "categoria_id": 1
+}
+
+PUT http://localhost:3000/api/platos/2
+Content-Type: application/json
+
+{
+  "nombre": "Sopa del Día - Especial",
+  "descripcion": "Calentita y sabrosa",
+  "precio": 6.5,
+  "disponible": true,
+  "categoria_id": 1
+}
+
+DELETE http://localhost:3000/api/platos/6
+
+### Ordenes
+GET http://localhost:3000/api/ordenes
+GET http://localhost:3000/api/ordenes/1
+
+POST http://localhost:3000/api/ordenes
+Content-Type: application/json
+
+{
+  "mesa": 3,
+  "items": [
+    { "plato_id": 1, "cantidad": 2 },
+    { "plato_id": 3, "cantidad": 1 }
+  ]
+}
+
+PUT http://localhost:3000/api/ordenes/1
+Content-Type: application/json
+
+{
+  "estado": "en_preparacion"
+}
+
+DELETE http://localhost:3000/api/ordenes/1
